@@ -1,23 +1,49 @@
-'use client'
-import React from 'react'
+"use client";
+import Image from "next/image";
 
-const Banner = () => {
+
+
+
+
+const HeroSection = () => {
   return (
-    <>
-       <section id='banner'>
-         <div className="bannerBg relative w-full h-[600px] bg-[#c4c4c4]">
-         <div className="banerImage absolute w-full h-[61px] bg-cover bg-center bg-no-repeat mt-[41px]">
-            <img src="/banner lambo 1.png" alt="" />
-           <div className="bannerPart float-end mt-[258px] mr-[42px]">
-            <h2 className='font-Dm font-normal text-[32px] text-[#000000] w-[380px] mb-[18px]'>safer ,faster and comfortable</h2>
-            <p className=' w-[286]font-normal font-roboto text-[26px] text-[#000000]'>Get in touch with ourluxury cars</p>
-            <button className=' mt-5 w-[251px] h-[41px] bg-[#21408E] text-[#ffffff] font-normal font-roboto text-[22px] rounded-[17px]'>Rent Now</button>
-           </div>
-         </div>
-         </div>
-       </section>
-    </>
-  )
-}
+    <section className="w-full bg-[#f5f5f5] pb-20">
+      {/* HERO TOP PART */}
+      <div>
+      <div className="w-full max-w-7xl mx-auto px-5 lg:px-0 flex flex-col-reverse lg:flex-row items-center gap-10 py-10">
 
-export default Banner
+      
+        {/* LEFT TEXT */}
+        {/* <div className="flex-1"> */}
+      
+                 {/* RIGHT IMAGE */}
+        <div className="relative">
+          <Image
+            src="/banner lambo 1.png"
+            width={1980}
+            height={450}
+            alt="Lamborghini"            
+            className="drop-shadow-xl object-contain"
+          />
+        </div>
+
+          <p className="mt-5 text-xl font-semibold text-black">
+            Safer, Faster And Comfortable
+          </p>
+          <p className="text-gray-600 mt-2 max-w-sm">
+            Get in touch with our luxury cars
+          </p>
+
+          <button className='bannerBtn'>
+            Rent Now
+          </button>
+        </div>
+ 
+      </div>
+
+    
+    </section>
+  );
+};
+
+export default HeroSection;

@@ -11,12 +11,9 @@ const HeroSection = () => {
       {/* HERO TOP PART */}
       <div>
       <div className="w-full max-w-7xl mx-auto px-5 lg:px-0 flex flex-col-reverse lg:flex-row items-center gap-10 py-10">
-
-  
-      
-                 {/* banner IMAGE */}
-        
-
+   {/* banner content */}
+         <div className=''>
+            
           <p className="mt-5 text-xl font-semibold text-black">
             Safer, Faster And Comfortable
           </p>
@@ -27,6 +24,8 @@ const HeroSection = () => {
           <button className='bannerBtn'>
             Rent Now
           </button>
+         </div>
+        
         </div>
  
       </div>

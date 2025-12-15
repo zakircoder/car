@@ -15,22 +15,9 @@
 
 
 
- .banerImage{
-  /* position: relative; */
-  /* background: url('../public/banner\ lambo\ 1.png');
+.banner{
+  background: url('../public/bannerlambo1.png');
   background-position: center;
-  background-size:cover;
   background-repeat:no-repeat;
-  margin-top: 41px;
-  margin-right:22px;
-  width:1440px;
-  height:600px; */
-
-}  
-/* .bannerBg{
-  position: absolute;
-  width:100%;
-  height: 600px;
-  background-color: #C4C4C4;
-  
-} */
+  background-size: cover;
+}

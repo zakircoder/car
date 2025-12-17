@@ -4,7 +4,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <>
-        <secton id="footer">
+        <Footer id="footer">
         <div className="footer w-full h-[595px] bg-[#081630]">
                 <div className="container">
                     <div className="footer_item">
@@ -41,7 +41,7 @@ const Footer = () => {
                     </div>
                 </div>
              </div>
-        </secton>
+        </Footer>
     </>
   )
 }

@@ -1,3 +1,4 @@
+'use client'
 import Link from 'next/link'
 import React from 'react'
 import { FaUserCircle } from "react-icons/fa";
@@ -6,9 +7,11 @@ import { FaUserCircle } from "react-icons/fa";
 const Navbar = () => {
   return (
     <>
-       <section id='Navbar'>
-            <div className='container'>
-           <div className="navRow flex justify-between items-center py-[34px]">
+
+
+       <nav>
+        <div className="container">
+                   <div className="navRow flex justify-between items-center py-[34px]">
 
                 <div className="navLogo"> <Link href={"/"}><img src="/LuxuryCars.png" alt="logo" /></Link></div>
            <div className="navItem ">
@@ -26,8 +29,8 @@ const Navbar = () => {
            <h2><Link href={"/sign In"}>Sign In</Link></h2>
         </div>
             </div>
-           </div>
-       </section>
+        </div>
+       </nav>
     </>
   )
 }
